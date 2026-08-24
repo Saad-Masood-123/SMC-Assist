@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — SMC Assist</title>
+<meta name="description" content="Book a free consultation, message SMC Assist on WhatsApp, or email the team directly to talk through customer support, admin, CRM, or sales operations.">
+<link rel="icon" href="logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="brand">
+      <img src="logo.jpg" alt="SMC Assist logo">
+      <span class="brand-text">SMC <span>Assist</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="mailto:the.smcassist@gmail.com" class="nav-icon-btn" aria-label="Email SMC Assist" title="Email us">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+      </a>
+      <button class="btn btn-ghost" onclick="openBooking()">Book a Meeting</button>
+      <a href="https://wa.me/923030367952" target="_blank" rel="noopener" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A7.85 7.85 0 0 0 12.05 4a7.94 7.94 0 0 0-6.9 11.9L4 20l4.2-1.1a7.9 7.9 0 0 0 3.83 1h.01a7.94 7.94 0 0 0 5.56-13.58zM12.05 18.4h-.01a6.6 6.6 0 0 1-3.35-.92l-.24-.14-2.49.65.67-2.43-.16-.25a6.58 6.58 0 0 1 10.2-8.2 6.53 6.53 0 0 1 1.94 4.66 6.6 6.6 0 0 1-6.56 6.63zm3.6-4.93c-.2-.1-1.17-.58-1.35-.64s-.32-.1-.45.1-.5.64-.62.77-.23.15-.43.05a5.4 5.4 0 0 1-2.7-2.36c-.2-.35.2-.32.58-1.08.06-.13.03-.24-.02-.34s-.45-1.08-.62-1.48c-.16-.39-.33-.34-.45-.34h-.38a.74.74 0 0 0-.54.25 2.24 2.24 0 0 0-.7 1.67 3.9 3.9 0 0 0 .81 2.06 8.9 8.9 0 0 0 3.4 3.02c.47.2.84.32 1.13.41.47.15.9.13 1.24.08.38-.06 1.17-.48 1.33-.94s.16-.86.11-.94-.16-.14-.34-.24z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+    <button class="hamburger" id="hamBtn" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0)" onclick="openBooking()" style="color:#1FA1A5;">Book a Free Meeting →</a>
+    <a href="https://wa.me/923030367952" target="_blank" rel="noopener" style="color:#1FA1A5;">Chat on WhatsApp →</a>
+    <a href="mailto:the.smcassist@gmail.com" style="color:#1FA1A5;">Email Us →</a>
+  </div>
+</header>
+
+<div class="booking-overlay" id="bookingOverlay">
+  <div class="booking-modal">
+    <div class="booking-close" onclick="closeBooking()">✕</div>
+    <iframe id="bookingIframe" src="about:blank" title="Book a free meeting"></iframe>
+  </div>
+</div>
+
+<!-- ================= PAGE HERO ================= -->
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb reveal"><a href="index.html">Home</a> <span>/</span> <span>Contact</span></div>
+    <div class="eyebrow reveal">Get In Touch</div>
+    <h1 class="reveal">Let's talk about your operations</h1>
+    <p class="reveal">Tell us what's eating up your team's time — support tickets, inbox overload, CRM cleanup, outreach — and we'll walk you through how SMC Assist could help.</p>
+  </div>
+</section>
+
+<!-- ================= MEETING / BOOKING ================= -->
+<section class="sec-tight">
+  <div class="wrap">
+    <div class="meeting-panel reveal">
+      <div>
+        <div class="eyebrow">Free Consultation</div>
+        <h2>Book a free 30-minute call</h2>
+        <p>Talk through your workload, tools, and where support would help most — no cost, no obligation.</p>
+        <div class="meeting-perks">
+          <div class="meeting-perk"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Pick a slot that suits your time zone</div>
+          <div class="meeting-perk"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Instant confirmation, no back-and-forth emails</div>
+          <div class="meeting-perk"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Completely free — no card required</div>
+        </div>
+        <button class="btn btn-primary" onclick="openBooking()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          Schedule Now
+        </button>
+      </div>
+      <div class="meeting-visual">
+        <div class="cal-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+        <h4>Live availability</h4>
+        <p>Powered by our online scheduler — see open slots and confirm in under a minute.</p>
+        <button class="btn btn-ghost on-dark" onclick="openBooking()" style="width:100%; justify-content:center;">Open Scheduler</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT CARDS + FORM ================= -->
+<section class="sec sec-alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Reach Us</div>
+      <h2>Whichever way works for you</h2>
+      <p>WhatsApp and email get the fastest response. The form on the right routes straight to our inbox.</p>
+    </div>
+    <div class="contact-grid" style="grid-template-columns:1fr 1fr; align-items:start;">
+      <div class="contact-cards reveal-stagger" style="display:flex; flex-direction:column; gap:16px;">
+        <a href="javascript:void(0)" onclick="openBooking()" class="c-card meet">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></div>
+          <div class="txt"><small>Free Consultation</small><strong>Book a Meeting</strong></div>
+          <div class="arrow">→</div>
+        </a>
+        <a href="https://wa.me/923030367952" target="_blank" rel="noopener" class="c-card wa">
+          <div class="ico"><svg viewBox="0 0 24 24" width="24" height="24" stroke-width="0"><path d="M17.6 6.32A7.85 7.85 0 0 0 12.05 4a7.94 7.94 0 0 0-6.9 11.9L4 20l4.2-1.1a7.9 7.9 0 0 0 3.83 1h.01a7.94 7.94 0 0 0 5.56-13.58zM12.05 18.4h-.01a6.6 6.6 0 0 1-3.35-.92l-.24-.14-2.49.65.67-2.43-.16-.25a6.58 6.58 0 0 1 10.2-8.2 6.53 6.53 0 0 1 1.94 4.66 6.6 6.6 0 0 1-6.56 6.63z"/></svg></div>
+          <div class="txt"><small>WhatsApp Business</small><strong>+92 303 0367952</strong></div>
+          <div class="arrow">→</div>
+        </a>
+        <a href="mailto:the.smcassist@gmail.com" class="c-card mail">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div>
+          <div class="txt"><small>Email</small><strong>the.smcassist@gmail.com</strong></div>
+          <div class="arrow">→</div>
+        </a>
+        <a href="https://www.linkedin.com/company/smc-assist/" target="_blank" rel="noopener" class="c-card li">
+          <div class="ico"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56z"/></svg></div>
+          <div class="txt"><small>LinkedIn</small><strong>SMC Assist</strong></div>
+          <div class="arrow">→</div>
+        </a>
+        <a href="https://instagram.com/smcassist" target="_blank" rel="noopener" class="c-card ig">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></div>
+          <div class="txt"><small>Instagram</small><strong>@smcassist</strong></div>
+          <div class="arrow">→</div>
+        </a>
+      </div>
+
+      <div class="contact-form-panel reveal">
+        <h3>Send a message</h3>
+        <p>Opens a pre-filled email to our inbox — we usually reply within one business day.</p>
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="field">
+              <label for="cf-name">Name</label>
+              <input type="text" id="cf-name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="field">
+              <label for="cf-email">Email</label>
+              <input type="email" id="cf-email" name="email" placeholder="you@company.com" required>
+            </div>
+          </div>
+          <div class="field" style="margin-bottom:20px;">
+            <label for="cf-message">What do you need help with?</label>
+            <textarea id="cf-message" name="message" placeholder="Tell us about your team, tools, and where support would help most." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="sec">
+  <div class="wrap" style="max-width:820px;">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Before You Reach Out</div>
+      <h2>A few common questions</h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item open">
+        <div class="faq-q"><span>How quickly can we get started?</span><span class="plus"></span></div>
+        <div class="faq-a"><p>Most engagements move from discovery call to live support within a week, once scope and access are confirmed.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Do you work with businesses outside Pakistan?</span><span class="plus"></span></div>
+        <div class="faq-a"><p>Yes. As a remote team, we support clients across different time zones and adjust working hours to overlap with yours.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Is the consultation call really free?</span><span class="plus"></span></div>
+        <div class="faq-a"><p>Yes — no cost, no obligation. It's a chance for us to understand your workload before proposing any scope of work.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Can support scale up or down later?</span><span class="plus"></span></div>
+        <div class="faq-a"><p>Scope is reviewed on an ongoing basis, so hours and coverage can be adjusted as your business needs change.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">
+          <img src="logo.jpg" alt="SMC Assist">
+          <span>SMC Assist</span>
+        </div>
+        <p class="footer-tag">Remote operations and virtual support for small businesses, startups, and e-commerce brands.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/smc-assist/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56z"/></svg>
+          </a>
+          <a href="https://instagram.com/smcassist" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#fff" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>Explore</h5>
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <a href="javascript:void(0)" onclick="openBooking()">Book a Meeting</a>
+          <a href="https://wa.me/923030367952" target="_blank" rel="noopener">WhatsApp Business</a>
+          <a href="mailto:the.smcassist@gmail.com">the.smcassist@gmail.com</a>
+          <a href="https://www.linkedin.com/company/smc-assist/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> SMC Assist. All rights reserved.</span>
+      <span>Remote Operations &amp; Virtual Support</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

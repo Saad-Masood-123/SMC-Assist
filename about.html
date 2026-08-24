@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — SMC Assist</title>
+<meta name="description" content="SMC Assist is a remote BPO and virtual assistant company built on documented process, direct communication, and accountable reporting. Meet the team behind it.">
+<link rel="icon" href="logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="brand">
+      <img src="logo.jpg" alt="SMC Assist logo">
+      <span class="brand-text">SMC <span>Assist</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="mailto:the.smcassist@gmail.com" class="nav-icon-btn" aria-label="Email SMC Assist" title="Email us">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+      </a>
+      <button class="btn btn-ghost" onclick="openBooking()">Book a Meeting</button>
+      <a href="https://wa.me/923030367952" target="_blank" rel="noopener" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A7.85 7.85 0 0 0 12.05 4a7.94 7.94 0 0 0-6.9 11.9L4 20l4.2-1.1a7.9 7.9 0 0 0 3.83 1h.01a7.94 7.94 0 0 0 5.56-13.58zM12.05 18.4h-.01a6.6 6.6 0 0 1-3.35-.92l-.24-.14-2.49.65.67-2.43-.16-.25a6.58 6.58 0 0 1 10.2-8.2 6.53 6.53 0 0 1 1.94 4.66 6.6 6.6 0 0 1-6.56 6.63zm3.6-4.93c-.2-.1-1.17-.58-1.35-.64s-.32-.1-.45.1-.5.64-.62.77-.23.15-.43.05a5.4 5.4 0 0 1-2.7-2.36c-.2-.35.2-.32.58-1.08.06-.13.03-.24-.02-.34s-.45-1.08-.62-1.48c-.16-.39-.33-.34-.45-.34h-.38a.74.74 0 0 0-.54.25 2.24 2.24 0 0 0-.7 1.67 3.9 3.9 0 0 0 .81 2.06 8.9 8.9 0 0 0 3.4 3.02c.47.2.84.32 1.13.41.47.15.9.13 1.24.08.38-.06 1.17-.48 1.33-.94s.16-.86.11-.94-.16-.14-.34-.24z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+    <button class="hamburger" id="hamBtn" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="javascript:void(0)" onclick="openBooking()" style="color:#1FA1A5;">Book a Free Meeting →</a>
+    <a href="https://wa.me/923030367952" target="_blank" rel="noopener" style="color:#1FA1A5;">Chat on WhatsApp →</a>
+    <a href="mailto:the.smcassist@gmail.com" style="color:#1FA1A5;">Email Us →</a>
+  </div>
+</header>
+
+<div class="booking-overlay" id="bookingOverlay">
+  <div class="booking-modal">
+    <div class="booking-close" onclick="closeBooking()">✕</div>
+    <iframe id="bookingIframe" src="about:blank" title="Book a free meeting"></iframe>
+  </div>
+</div>
+
+<!-- ================= PAGE HERO ================= -->
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb reveal"><a href="index.html">Home</a> <span>/</span> <span>About</span></div>
+    <div class="eyebrow reveal">About SMC Assist</div>
+    <h1 class="reveal">Built on process, not promises</h1>
+    <p class="reveal">SMC Assist is a remote BPO and virtual assistant company built to help small businesses, startups, e-commerce brands, agencies, and service providers manage day-to-day operational work without the overhead of hiring in-house staff.</p>
+  </div>
+</section>
+
+<!-- ================= ABOUT STRIP ================= -->
+<section class="sec-tight">
+  <div class="wrap reveal">
+    <p style="max-width:820px; color:var(--ink-soft); font-size:16.5px; line-height:1.8;">We operate as a distributed team, providing dedicated support across customer service, administrative tasks, lead generation, CRM management, and sales support — with clear communication and full visibility into the work being done on your behalf. No task starts without an agreed scope, and no scope stays fixed once your business changes.</p>
+  </div>
+</section>
+
+<!-- ================= VALUES ================= -->
+<section class="sec sec-alt sec-tight">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">How We Operate</div>
+      <h2>Three things we hold to on every engagement</h2>
+    </div>
+    <div class="values-grid reveal-stagger">
+      <div class="value-card">
+        <span class="tag">Documentation</span>
+        <h3>Nothing runs on memory</h3>
+        <p>Workflows, escalation rules, and response expectations are written down before work starts — so coverage doesn't depend on one person remembering how things are done.</p>
+      </div>
+      <div class="value-card">
+        <span class="tag">Communication</span>
+        <h3>One named point of contact</h3>
+        <p>You know exactly who is handling your account and how quickly they'll respond, instead of routing questions through a ticket queue.</p>
+      </div>
+      <div class="value-card">
+        <span class="tag">Accountability</span>
+        <h3>Work you can see</h3>
+        <p>Regular status updates and logged work mean you always know what's been handled and what's still open.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY US ================= -->
+<section class="sec" id="why">
+  <div class="wrap why-grid">
+    <div class="reveal">
+      <div class="eyebrow">Why Outsource</div>
+      <h2 style="font-size:clamp(26px,3.2vw,34px); margin:16px 0 26px;">Why businesses choose a remote operations partner</h2>
+      <div class="why-list">
+        <div class="why-item">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+          <div><h4>Cost efficiency</h4><p>Avoid the overhead of full-time hires, office space, and equipment for tasks that don't require it.</p></div>
+        </div>
+        <div class="why-item">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 1l4 4-4 4M3 11V9a4 4 0 0 1 4-4h14M7 23l-4-4 4-4M21 13v2a4 4 0 0 1-4 4H3"/></svg></div>
+          <div><h4>Flexibility</h4><p>Scale support up or down as workload changes, without a lengthy hiring or termination process.</p></div>
+        </div>
+        <div class="why-item">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <div><h4>Faster coverage</h4><p>Bring in support for a defined function without a long recruitment cycle.</p></div>
+        </div>
+        <div class="why-item">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
+          <div><h4>Focus</h4><p>Free up founders and core staff to spend time on strategic, revenue-generating work.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="why-panel reveal">
+      <div class="eyebrow">Our Positioning</div>
+      <h3>An emerging, process-driven partner</h3>
+      <p>SMC Assist is structured around disciplined workflows, defined communication protocols, and accountable reporting rather than scale or tenure. We're set up correctly from day one — and built to grow alongside your business.</p>
+      <a href="contact.html" class="btn btn-ghost on-dark">Start a conversation</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INDUSTRIES ================= -->
+<section class="sec sec-alt sec-tight" id="industries">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Who We Support</div>
+      <h2>Industries we can support</h2>
+      <p>Our services are built to be adaptable across a range of business types.</p>
+    </div>
+    <div class="industries-wrap reveal-stagger">
+      <div class="industry-chip"><i></i>E-commerce &amp; Retail Brands</div>
+      <div class="industry-chip"><i></i>Startups &amp; Small Businesses</div>
+      <div class="industry-chip"><i></i>Marketing &amp; Creative Agencies</div>
+      <div class="industry-chip"><i></i>Real Estate &amp; Property Services</div>
+      <div class="industry-chip"><i></i>Coaching &amp; Consulting Businesses</div>
+      <div class="industry-chip"><i></i>SaaS &amp; Tech Service Providers</div>
+      <div class="industry-chip"><i></i>Professional &amp; Service Businesses</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOUNDER ================= -->
+<section class="sec" id="founder">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Leadership</div>
+      <h2>Meet the founder</h2>
+    </div>
+    <div class="founder-wrap reveal">
+      <div class="founder-photo">
+        <img src="founder-photo.jpg" alt="Saad Masood, Founder of SMC Assist" onerror="this.style.display='none'; this.parentElement.querySelector('.placeholder-txt').style.display='block';">
+        <div class="placeholder-txt" style="display:none;">Add founder-photo.jpg<br>next to this HTML file</div>
+      </div>
+      <div class="founder-info">
+        <div class="eyebrow" style="margin-bottom:0;">Founder</div>
+        <h3>Saad Masood</h3>
+        <div class="founder-role">AI Engineer &amp; BPO Services Expert</div>
+        <p class="bio">Saad founded SMC Assist to bring the same discipline and accountability found in engineering workflows to remote business operations — combining an AI engineering background with hands-on BPO expertise to build support processes that are documented, measurable, and built to scale.</p>
+        <div class="founder-links">
+          <a href="mailto:saadchahal000@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            saadchahal000@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/company/smc-assist/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA BAND ================= -->
+<section class="sec sec-alt">
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <div>
+        <h2>Want to know how we'd fit your team?</h2>
+        <p>A short call is usually enough to tell you if we're the right match.</p>
+      </div>
+      <div class="actions">
+        <button class="btn btn-primary" onclick="openBooking()">Book a Free Meeting</button>
+        <a href="contact.html" class="btn btn-ghost on-dark">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">
+          <img src="logo.jpg" alt="SMC Assist">
+          <span>SMC Assist</span>
+        </div>
+        <p class="footer-tag">Remote operations and virtual support for small businesses, startups, and e-commerce brands.</p>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/company/smc-assist/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56z"/></svg>
+          </a>
+          <a href="https://instagram.com/smcassist" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#fff" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>Explore</h5>
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <a href="javascript:void(0)" onclick="openBooking()">Book a Meeting</a>
+          <a href="https://wa.me/923030367952" target="_blank" rel="noopener">WhatsApp Business</a>
+          <a href="mailto:the.smcassist@gmail.com">the.smcassist@gmail.com</a>
+          <a href="https://www.linkedin.com/company/smc-assist/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> SMC Assist. All rights reserved.</span>
+      <span>Remote Operations &amp; Virtual Support</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
